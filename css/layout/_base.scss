@@ -1,0 +1,94 @@
+body html {
+    height: 100%;
+}
+
+body {
+    font-family: "Alegreya Sans", Arial, sans-serif;
+    font-size: $baseFontSize;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    color: #666666;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: $containerWidth + 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: $containerWidth;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 800;
+    padding: 21px 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    line-height: 1;
+    border: none;
+
+    &--yellow {
+        background: $yellow;
+        color: #000;
+        cursor: pointer;
+    }
+
+    &--transparent{
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+        cursor: pointer;
+    }
+}
