@@ -10,7 +10,7 @@
     &:before {
          content: url("../img/three.png");
          position: absolute;
-         top: 64px;
+         top: rem(64px);
          right: 0;
          transform: translateX(50%);
     }
