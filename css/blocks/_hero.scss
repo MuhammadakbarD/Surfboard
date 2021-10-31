@@ -44,6 +44,12 @@
     @include tablets {
         padding: 0 7%;
     }
+
+    @include phones {
+        padding: 0;
+        overflow-wrap: anywhere;
+    }
+
 }
 
 .hero__title-desc {

@@ -6,9 +6,7 @@
     display: none;
 
     @include tablets {
-
-    display: inline-flex;
-
+        display: inline-flex;
     }
 }
 
