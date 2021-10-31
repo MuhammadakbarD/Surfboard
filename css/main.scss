@@ -4,7 +4,12 @@ $baseFontSize: 18px;
 $dark: #313131;
 $yellow: #FEDB3F;
 
+$tablets: 768px;
+$phone: 480px;
+
 $z-fixed-menu: 100;
+
+@import "layout/media";
 
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
 
