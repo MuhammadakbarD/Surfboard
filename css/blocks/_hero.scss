@@ -11,6 +11,12 @@
     width: 42%;
 }
 
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
+}
+
 .hero__container {
     display: flex;
     flex-direction: column;
