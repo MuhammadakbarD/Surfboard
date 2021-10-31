@@ -4,7 +4,7 @@
     justify-content: space-between;
 }
 
-.header__phone-number {
+.phone-number.header__phone-number {
     @include tablets {
         display: none;
     }
