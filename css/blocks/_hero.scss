@@ -1,10 +1,20 @@
 .hero {
     background: url("../img/headpic.png") center top no-repeat;
     background-size: cover;
-    background-color: $dark;
+    background-color: #1968B1;
     height: 100vh;
     min-height: rem(650px); 
     color: #fff;
+    
+    @include tablets {
+        background: url("../img/headpic.png") center bottom no-repeat;
+        background-color: #1968B1;
+        height: 94vh;
+    }
+
+    @include phones {
+        margin-bottom: rem(52px);
+    }
 }
 
 .hero__title-section {
