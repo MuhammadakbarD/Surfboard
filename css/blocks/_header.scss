@@ -41,7 +41,7 @@
 }
 
 .phone-number {
-    font-style: rem(22px);
+    font-size: rem(22px);
     font-weight: bold;
     text-decoration: none;
     display: flex;
@@ -59,4 +59,20 @@
 
 .phone-number__text {
     white-space: nowrap;
+}
+
+.contacts {
+    font-size: rem(21px);
+    font-weight: normal;
+    color: #292929;
+    font-style: normal;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align:right;
+
+}
+
+.phone-number--dark {
+    font-weight: normal;
 }

@@ -257,7 +257,7 @@ img {
 }
 
 .phone-number {
-  font-style: 1.2222222222rem;
+  font-size: 1.2222222222rem;
   font-weight: bold;
   text-decoration: none;
   display: -webkit-box;
@@ -280,6 +280,28 @@ img {
 
 .phone-number__text {
   white-space: nowrap;
+}
+
+.contacts {
+  font-size: 1.1666666667rem;
+  font-weight: normal;
+  color: #292929;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.phone-number--dark {
+  font-weight: normal;
 }
 
 .hamburger {
