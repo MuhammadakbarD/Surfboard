@@ -41,6 +41,31 @@
         width: 68px;
         height: 128px;
     }
+    .parameter-icon {
+        width: 38px;
+        height: 38px;
+        fill: #fff;
+    }
+    .length-icon {
+        width: 24px;
+        height: 14px;
+        fill: #010002;
+    }
+    .width-icon {
+        width: 24px;
+        height: 14px;
+        fill: #010002;
+    }
+    .thickness-icon {
+        width: 24px;
+        height: 24px;
+        fill: #010002;
+    }
+    .weight-icon {
+        width: 24px;
+        height: 24px;
+        fill: #000;
+    }
 </style>
 
 <body>
@@ -85,7 +110,7 @@
                             </span>
                             <span class="phone-number__text">8 800 903 90 90</span>
                         </a>
-                        <a href="" class="hamburger">
+                        <a href="" id="hamburger" class="hamburger">
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
@@ -189,6 +214,97 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+
+            <section class="section product-section">
+                <div class="container">
+                    <div class="product-slider">
+                        <ul class="products">
+                            <li class="products__item product">
+                                <div class="product__container">
+                                    <div class="product__col product__col-right">
+                                        <img src="./img/serfer.png" alt="" class="product__img">
+                                    </div>
+                                    <div class="product__col">
+                                        <div class="product__parameters">
+                                            <svg class="parameter-icon">
+                                                <use xlink:href="./sprite.svg#parameter"></use>
+                                            </svg>
+                                            <div class="product__parameters--desc">Параметры</div>
+                                            <div class="product__parameter parametres">
+                                                <table class="parametres__item">
+                                                   <tr class="parametres__link">
+                                                        <td class="parametres__icon">
+                                                            <svg class="length-icon">
+                                                                <use xlink:href="./sprite.svg#length"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="parametres-text">Длина доски</td>
+                                                        <td class="parametres-length">от 2,5 м</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td class="parametres__icon">
+                                                            <svg class="width-icon">
+                                                                <use xlink:href="./sprite.svg#width"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="parametres-text">Ширина доски</td>
+                                                        <td class="parametres-length">от 40 см</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td class="parametres__icon">
+                                                            <svg class="thickness-icon">
+                                                                <use xlink:href="./sprite.svg#thickness"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="parametres-text">Толщина</td>
+                                                        <td class="parametres-length">8 см</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td class="parametres__icon">
+                                                            <svg class="swatch-icon">
+                                                                <use xlink:href="./sprite.svg#swatch"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="parametres-text">Срок службы</td>
+                                                        <td class="parametres-length">5 лет</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td class="parametres__icon">
+                                                            <svg class="weight-icon">
+                                                                <use xlink:href="./sprite.svg#weight"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="parametres-text">Вес</td>
+                                                        <td class="parametres-length">7-8 кг</td>
+                                                    </tr> 
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__title">Лонгборд 2.0</h3>
+                                        <div class="product__text">
+                                            <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.                                            </p>
+                                        </div>
+                                        <div class="product__descs">
+                                            <div class="product__desc">
+                                                <div class="product__desc--top">Длина доски</div>
+                                                <div class="product__desc--bottom">от 2,5 метров</div>
+                                            </div>
+                                            <div class="product__desc">
+                                                <div class="product__desc--top">Ширина доски</div>
+                                                <div class="product__desc--bottom">от 40 сантиметров</div>
+                                            </div>
+                                        </div>
+                                        <div class="product__values">
+                                            <div class="product__values---price">7000 ₽</div>
+                                            <a class="btn btn--yellow">ЗАКАЗАТЬ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -347,5 +463,35 @@
         </ul>
     </nav>
 
+    <div class="fullscreen-menu">
+        <a href="#" class="fullscreen-menu__close">Х</a>
+        <nav class="menu menu--vertical">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Серфборды</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Меню</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Как мы работаем</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>

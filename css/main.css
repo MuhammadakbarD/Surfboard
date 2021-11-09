@@ -375,6 +375,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .section {
+    margin-top: 10rem;
+  }
+}
 
 .headline {
   text-align: center;
@@ -401,6 +406,128 @@ img {
   .headline__subtitle {
     padding: 0 8%;
   }
+}
+
+.product-section {
+  background: #F8FAF9;
+}
+
+.product__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .product__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.product__parameters {
+  background: #3A587E;
+  width: 5.0555555556rem;
+  height: 5.0555555556rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.2777777778rem;
+  margin-bottom: 3.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .product__parameters {
+    display: none;
+  }
+}
+
+.product__col-right {
+  background: url(../img/cloud.png) center top 50% no-repeat;
+  margin-right: 4.4444444444rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product__title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 1.3888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .product__title {
+    text-align: center;
+  }
+}
+
+.product__text {
+  margin-bottom: 1.3333333333rem;
+}
+
+.product__descs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .product__descs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.parametres {
+  color: black;
+  display: none;
+  font-size: 0.8888888889rem;
+}
+
+.parametres__icon {
+  font-weight: 500;
+}
+
+.product__desc--bottom {
+  font-weight: bold;
+  color: #000000;
+}
+
+.product__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .product__values {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.product__values---price {
+  font-weight: 300;
+  font-size: 3.3333333333rem;
+  color: #151515;
 }
 
 .benefits {
@@ -860,4 +987,59 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #313131;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.fullscreen-menu__close {
+  text-decoration: none;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #FFFFFF;
+  font-size: 1.3888888889rem;
+}
+
+.menu--vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.menu--vertical .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

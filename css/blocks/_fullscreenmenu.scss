@@ -1,0 +1,38 @@
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: #313131;
+    z-index: 1000;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.fullscreen-menu__close {
+    text-decoration: none;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: #FFFFFF;
+    font-size: rem(25px);
+
+}
+
+.menu--vertical{
+    display: flex;
+    flex-direction: column;
+    font-size: rem(36px);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.menu--vertical .menu__list {
+    display: flex;
+    flex-direction: column;
+}
