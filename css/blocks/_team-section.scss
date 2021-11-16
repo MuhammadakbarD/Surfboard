@@ -1,0 +1,113 @@
+.team {
+    display: flex;
+    justify-content: space-between
+}
+
+.team--version--desktop {
+    @include tablets {
+        display: none;
+    }
+}
+
+.team--version--desktop
+.team__content {
+    position: absolute;
+    top: 100%;
+}
+
+.team__item {
+    flex: 1;
+    text-align: center;
+    margin-right: rem(20px);
+    max-width: rem(288px);
+    position: relative;
+    justify-content: space-between;
+
+    &:last-child {
+        margin: 0; 
+    }
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(16px);
+    }
+}
+
+.team__member {
+    height: rem(290px);
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        text-align: -webkit-center;
+        margin-bottom: rem(55px);
+    
+    }
+}
+
+.team__img {
+    @include tablets {
+        min-width: 90%;
+    }
+}
+
+
+.team__title {
+    color: #292929;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: rem(8px);
+    font-weight: bold;
+    font-size: rem(22px);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin: 0px 4px;
+
+    &:before {
+        content: url(../img/arrow_down.png);
+        position: absolute;
+        left: 90%;
+        
+        @include tablets {
+            left: 83%;
+        }
+    }
+
+}
+
+.team__content {
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+}
+
+.team__content-block {
+    padding-bottom: rem(5px);
+}
+
+.team__vocation {
+    color: #292929;
+
+    @include tablets {
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+.team__text {
+    font-weight: 300;
+    color: #666666;
+}
+
+.team--version--mobile {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+}

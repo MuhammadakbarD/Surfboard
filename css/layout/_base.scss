@@ -96,6 +96,10 @@ img {
         background: $yellow;
         color: #000;
         cursor: pointer;
+
+        @include phones {
+            font-size: rem(19px);
+        }
     }
 
     &--transparent{

@@ -1,0 +1,33 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #313131;
+    display: flex;
+    display: none;
+
+    .fancybox-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.modal__container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: rem(35px) rem(60px);
+    width: rem(309px);
+    height: rem(176px);
+}
+
+.modal__content {
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: rem(30px);
+}

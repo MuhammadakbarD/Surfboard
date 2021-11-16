@@ -2,6 +2,16 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include tablets {
+        top: 0;
+        left: 0;
+        background-color: #1968B1;
+        padding: rem(23px) rem(26px) rem(23px) rem(26px);
+        margin-right: rem(-22px);
+        margin-left: rem(-22px);
+        align-items: center;
+    }
 }
 
 .phone-number.header__phone-number {

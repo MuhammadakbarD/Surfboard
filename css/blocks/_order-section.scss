@@ -2,7 +2,17 @@
     background: url("../img/order.jpg")center top no-repeat;
     background-size: cover;
     color: #FFFFFF;
+    position: relative;
 
+    &::before{ 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(41, 41, 41, 0.4);
+    }
 }
 
 .section__title--bright {

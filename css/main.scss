@@ -9,6 +9,7 @@ $yellow: #FEDB3F;
 
 $tablets: 768px;
 $phone: 480px;
+$iphone5: 320px;
 
 $z-fixed-menu: 100;
 
@@ -27,13 +28,17 @@ $z-fixed-menu: 100;
 @import "blocks/feature";
 @import "blocks/section";
 @import "blocks/headline";
-@import "blocks/product-section";
 @import "blocks/benefits";
 @import "blocks/benefit";
+@import "blocks/product-section";
+@import "blocks/team-section";
 @import "blocks/reviews";
 @import "blocks/interactive-avatar";
 @import "blocks/order-section";
 @import "blocks/form";
 @import "blocks/radio";
+@import "blocks/map-section";
+@import "blocks/footer";
 @import "blocks/fixed__menu";
 @import "blocks/fullscreenmenu";
+@import "blocks/modal";

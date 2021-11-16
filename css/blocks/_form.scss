@@ -64,6 +64,14 @@
         }
     }
 }
+.form__input.input-error {
+    border-color: red;
+    outline: none;
+}
+
+.input-error {
+    border-color: red;
+}
 
 .form__controls {
     display: flex;
