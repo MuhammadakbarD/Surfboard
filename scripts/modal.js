@@ -29,7 +29,7 @@ $('.form').submit(e => {
 
      if (isValid) {
        const request  =  $.ajax ({
-            url: "https://webdev-api.loftschool.com/sendmail",
+            url: "http://94.26.230.151/sendmail",
             method: "post",
             data: {
                name: name.val(),
@@ -45,7 +45,7 @@ $('.form').submit(e => {
         });
 
         request.fail(data => {
-            const message = data.responsJSON.message;
+            const message = data.responseJSON.message;
             content.text(message);
             modal.addClass("error-modal");
         });

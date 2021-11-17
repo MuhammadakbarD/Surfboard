@@ -1149,11 +1149,6 @@ img {
   }
 }
 
-.form__input.input-error {
-  border-color: red;
-  outline: none;
-}
-
 .input-error {
   border-color: red;
 }
@@ -1249,7 +1244,7 @@ img {
 }
 
 .map-section {
-  background: url(../img/map.png) center top no-repeat;
+  background: url(../../img/map.svg) center top no-repeat;
   background-size: cover;
 }
 
@@ -1450,9 +1445,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
-  padding: 1.9444444444rem 3.3333333333rem;
+  padding: 1.3888888889rem 1.3888888889rem;
   width: 17.1666666667rem;
   height: 9.7777777778rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .modal__content {
