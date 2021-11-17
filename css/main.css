@@ -1244,7 +1244,7 @@ img {
 }
 
 .map-section {
-  background: url(../../img/map.svg) center top no-repeat;
+  background: url(../img/map.svg) center top no-repeat;
   background-size: cover;
 }
 
