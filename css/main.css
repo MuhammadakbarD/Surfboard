@@ -899,7 +899,7 @@ img {
 }
 
 .menu-section {
-  background: url(../../img/suracc.jpeg) center center/cover no-repeat;
+  background: url(../img/suracc.jpeg) center center/cover no-repeat;
   position: relative;
 }
 .menu-section:before {
