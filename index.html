@@ -549,6 +549,59 @@
                 </div>
             </section>
 
+            <section class="section menu-section">
+                <div class="menu__title">
+                  <h2 class="section__title section__title--bright title_menu">Меню</h2>
+                </div>
+                <ul class="menu-acco">
+                    <li class="menu-acco__item">
+                      <a href="" class="menu-acco__trigger" style="background-image: url('./img/longboard.jpeg')">
+                        <span class="menu-acco__trigger-title">Лонгборды</span>
+                      </a>
+                        <div class="menu-acco__content">
+                          <p class="menu-acco__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
+                            грести, разгребаться на волны и ехать. Размер и плавучесть 
+                            доски позволяет брать очень маленькие и пологие волны и не
+                            спеша, не прилагая особых усилий ехать по ним.</p>
+                          <button class="close-btn" type="button">
+                              <img src="./img/exit.svg" class="close-btn-icon"></img>
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li class="menu-acco__item">
+                      <a href="" class="menu-acco__trigger" style="background-image: url('./img/shortboard.jpeg')">
+                        <span class="menu-acco__trigger-title">Шортборды</span>
+                      </a>
+                        <div class="menu-acco__content">
+                          <p class="menu-acco__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
+                            грести, разгребаться на волны и ехать. Размер и плавучесть 
+                            доски позволяет брать очень маленькие и пологие волны и не
+                            спеша, не прилагая особых усилий ехать по ним.</p>
+                            <button class="close-btn" type="button">
+                                <img src="./img/exit.svg" class="close-btn-icon"></img>
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li class="menu-acco__item">
+                      <a href="" class="menu-acco__trigger" style="background-image: url('./img/softtopi.jpeg')">
+                        <span class="menu-acco__trigger-title">Софттопы</span>
+                      </a>
+                        <div class="menu-acco__content">
+                          <p class="menu-acco__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
+                            грести, разгребаться на волны и ехать. Размер и плавучесть 
+                            доски позволяет брать очень маленькие и пологие волны и не
+                            спеша, не прилагая особых усилий ехать по ним.</p>
+                            <button class="close-btn" type="button">
+                                <img src="./img/exit.svg" class="close-btn-icon"></img>
+                              </button>
+                        </div>
+                    </li>
+                </ul>
+                
+            </section>
+
             <section class="section">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
@@ -637,6 +690,30 @@
                 </div>
             </section>
 
+            <section class="section player-section">
+                <div class="container">
+                  <h2 class="section__title">Как мы работаем</h2>
+                  <div class="player-section__container">
+                    <div class="player">
+                      <div class="player__wrapper">
+                        <div id="yt-player" class="player__elem"></div>
+                        <div class="player__splash"> </div>
+                      </div>
+                      <div class="player__controls">
+                        <button class="player__start"></button>
+                        <div class="player__playback ">
+                          <button class="player__playback-button"></button>
+                        </div>
+                        <div class="player__duration">
+                          <span class="player__duration-completed">0:00</span> :
+                          <span class="player__duration-estimate">0:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
             <section class="section order-section">
                 <div class="container">
                     <h2 class="section__title section__title--bright">Закажие доску</h2>
@@ -715,6 +792,7 @@
             </section>
 
             <section class="section map-section">
+                <div id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
                         <address class="contacts">
@@ -842,10 +920,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/accord.js"></script>
+    <script src="./scripts/menu-acco.js"></script>
     <script src="./scripts/tabs.js"></script>
+    <script src = "https://www.youtube.com/iframe_api"></script>
+    <script src="./scripts/player.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/map.js"></script>
 </body>
 </html>

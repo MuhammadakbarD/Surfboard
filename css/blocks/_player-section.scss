@@ -1,0 +1,114 @@
+.player {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../img/player.png) center center/cover no-repeat;
+        cursor: pointer;
+    }
+
+    &__controls {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: rem(35px);
+        background: #3e3e3e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 rem(25px);
+    }
+
+    &__start {
+        border: none;
+        background-color: #3e3e3e;
+        padding: 0;
+            position: absolute;
+            transform: translate(rem(-20px), 0);
+            border: rem(10px) solid transparent;
+            width: 0;
+            height: 0;
+            border-left-color: #EDEDED;
+            border-right-width: 0;
+        
+    }
+
+    &__playback {
+        height: rem(16px);
+        width: rem(446px);
+        position: relative;
+
+        &::before {
+            content: "";
+            height: rem(4px);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            background: #626262;
+            transform: translateY(-50%);
+        }
+
+        &-button {
+            background: #626262;
+            background-repeat:no-repeat;
+            border: none;
+            width: rem(12px);
+            height: rem(12px);
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+    }
+}
+
+.player.active .player__splash {
+    display: none;
+}
+
+.player.paused {
+    .player__start {
+        width: rem(14px);
+        height: rem(14px);
+        border: none;
+
+        &:after,
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5px;
+            top: 0;
+            bottom: 0;
+            background: #626262;
+        }
+    }
+
+    &:after {
+        right: 0;
+    }
+
+    &:before {
+        left: 0;
+    }
+}
+
+.player-section__container {
+    width: rem(662px);
+    margin-left: 15%;
+}

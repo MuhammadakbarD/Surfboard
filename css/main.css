@@ -114,7 +114,7 @@ img {
 }
 
 .hero {
-  background: url("../img/headpic.png") center top no-repeat;
+  background: url("../img/headpic.png") center top/cover no-repeat;
   background-size: cover;
   background-color: #313131;
   height: 100vh;
@@ -898,6 +898,155 @@ img {
   }
 }
 
+.menu-section {
+  background: url(../../img/suracc.jpeg) center center/cover no-repeat;
+  position: relative;
+}
+.menu-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(41, 41, 41, 0.2);
+}
+
+.menu__title {
+  left: 4.6666666667rem;
+  top: 6.0555555556rem;
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .menu__title {
+    left: 0.5555555556rem;
+    top: 4.2222222222rem;
+  }
+}
+
+.menu-acco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-acco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.menu-acco__trigger {
+  width: 5.6666666667rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+}
+.menu-acco__trigger:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(41, 41, 41, 0.5);
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__trigger {
+    width: 5rem;
+  }
+}
+
+.menu-acco__trigger-title {
+  font-size: 2.6666666667rem;
+  color: #fff;
+  font-weight: bold;
+  white-space: nowrap;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-top: 1.9444444444rem;
+}
+
+.menu-acco__content {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: rgba(47, 50, 52, 0.93);
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+  color: rgba(255, 255, 255, 0);
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__content {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-acco__item.active {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    -webkit-transition: color 0.4s 0.3s;
+    transition: color 0.4s 0.3s;
+  }
+}
+
+.menu-acco__item.active .menu-acco__content {
+  width: 29.1111111111rem;
+  -webkit-transition: width 0.4s, color 0.4s 0.3s;
+  transition: width 0.4s, color 0.4s 0.3s;
+  color: #fff;
+}
+
+.menu-acco__text {
+  font-size: 0.8888888889rem;
+  color: #fff;
+  padding: 3.6111111111rem 1.8888888889rem;
+  width: 100%;
+  position: relative;
+}
+
+.close-btn {
+  -webkit-transform: translate(475px, -223px);
+          transform: translate(475px, -223px);
+  background: transparent;
+  border: none;
+}
+
+.close-btn-icon {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  fill: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .reviews__display {
   background: #F8FAF9;
   padding: 2.3333333333rem;
@@ -1001,6 +1150,120 @@ img {
   position: static;
   opacity: 1;
   pointer-events: unset;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.player__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/player.png) center center/cover no-repeat;
+  cursor: pointer;
+}
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.9444444444rem;
+  background: #3e3e3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.3888888889rem;
+}
+.player__start {
+  border: none;
+  background-color: #3e3e3e;
+  padding: 0;
+  position: absolute;
+  -webkit-transform: translate(-1.1111111111rem, 0);
+          transform: translate(-1.1111111111rem, 0);
+  border: 0.5555555556rem solid transparent;
+  width: 0;
+  height: 0;
+  border-left-color: #EDEDED;
+  border-right-width: 0;
+}
+.player__playback {
+  height: 0.8888888889rem;
+  width: 24.7777777778rem;
+  position: relative;
+}
+.player__playback::before {
+  content: "";
+  height: 0.2222222222rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.player__playback-button {
+  background: #626262;
+  background-repeat: no-repeat;
+  border: none;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player.active .player__splash {
+  display: none;
+}
+
+.player.paused .player__start {
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
+  border: none;
+}
+.player.paused .player__start:after, .player.paused .player__start:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background: #626262;
+}
+.player.paused:after {
+  right: 0;
+}
+.player.paused:before {
+  left: 0;
+}
+
+.player-section__container {
+  width: 36.7777777778rem;
+  margin-left: 15%;
 }
 
 .reviews-switcher__item {
@@ -1243,9 +1506,13 @@ img {
           transform: translate(-50%, -50%);
 }
 
-.map-section {
-  background: url(../img/map.png) center top no-repeat;
-  background-size: cover;
+/*.map-section {
+    background: url(../img/map.png) center top no-repeat;
+    background-size: cover;
+}*/
+#map {
+  height: 100%;
+  width: 100%;
 }
 
 .footer {
