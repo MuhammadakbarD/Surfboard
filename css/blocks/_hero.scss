@@ -2,7 +2,8 @@
     background: url("../img/headpic.png") center top / cover no-repeat;
     background-size: cover;
     background-color: #313131;
-    height: 100vh;
+    //height: 100vh;
+    height: 100%;
     min-height: rem(650px); 
     color: #fff;
     position: relative;
@@ -12,7 +13,7 @@
     }
 
     @include phones {
-        margin-bottom: rem(52px);
+        margin-bottom: rem(14px);
         object-fit: cover;
     }
 }
