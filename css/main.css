@@ -1164,6 +1164,19 @@ img {
   pointer-events: unset;
 }
 
+.player__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .player {
   position: relative;
   display: block;
@@ -1274,8 +1287,8 @@ img {
 }
 
 .player-section__container {
-  width: 36.7777777778rem;
-  margin-left: 15%;
+  max-width: 36.7777777778rem;
+  width: 100%;
 }
 
 .reviews-switcher__item {
