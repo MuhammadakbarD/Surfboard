@@ -43,18 +43,18 @@
         });
     });
 
-    //document.addEventListener('click', e => {
-    //    e.preventDefault();
-   //     let activePerson = document.querySelector(".menu-acco__item.active");
-     //   const target = e.target;
+    /*document.addEventListener('click', e => {
+        e.preventDefault();
+        let activePerson = document.querySelector(".menu-acco__item.active");
+        const target = e.target;
 
-       // if (!target.closest(".menu-acco") && activePerson) {
-         //   closeItem(activePerson);
-        //}
-        //if (target.closest('.closes-btn') && activePerson) {
-          //  closeItem(activePerson);
-        //}
-    //});
+        if (!target.closest(".menu-acco") && activePerson) {
+            closeItem(activePerson);
+        }
+        if (target.closest('.close-btn') && activePerson) {
+            closeItem(activePerson);
+        }
+    });*/
 
     const closeButton = document.querySelector('.close-btn');
 

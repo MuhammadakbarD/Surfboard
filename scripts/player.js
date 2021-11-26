@@ -1,3 +1,5 @@
+/* YouTube API
+
 let player;
 const playerContainer = $('.player');
 
@@ -102,4 +104,104 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
-eventsInit();
+eventsInit();*/
+
+const video = document.getElementById('player');
+const durationControl = document.getElementById('durationLevel');
+const soundControl = document.getElementById('micLevel');
+const playButtons = document.querySelectorAll('.play');
+const playButtonVideo = document.querySelector('.video__player-img');
+const micButton = document.getElementById('mic');
+
+const MAX_SOUND_VALUE = 100;
+let intervalId;
+let soundLevel;
+const NORMAL_UPDATE_RANGE = 1000 / 66;
+
+
+function setEventListeners() {
+
+    video.addEventListener ('canplaythrough', function() {
+        durationControl.max = video.duration;
+    });
+
+    playButtons.forEach((button) => {
+        button.addEventListener('click', playStop);
+    });
+
+    micButton.addEventListener('click', toggleSoundValue)
+
+    video.addEventListener('click', playStop);
+
+    durationControl.addEventListener('mousedown', stopInterval);
+    durationControl.addEventListener('click', setVideoDuration);
+
+    soundControl.addEventListener('mouseup', setSoundVolume)
+};
+
+
+function playStop() {
+    playButtonVideo.classList.toggle('video__player-img--hidden');
+
+    if (video.paused) {
+        intervalId = setInterval(upateDuration, NORMAL_UPDATE_RANGE);
+        upateDuration();
+        video.play();
+    } else {
+        stopInterval();
+        video.pause();
+    }
+};
+
+function setVideoDuration () {
+    //console.log('mouseup on range');
+    intervalId = setInterval(upateDuration, NORMAL_UPDATE_RANGE);
+    video.currentTime = durationControl.value;
+
+    if(video.paused) {
+        video.play();
+        playButtonVideo.classList.add('video__player-img--hidden');
+    }
+}
+
+function upateDuration() {
+    durationControl.value = video.currentTime;
+    //console.log('Обновляем range', video.currentTime);
+}
+
+function stopInterval() {
+    if(!video.paused) {
+        //console.log('Очищаем интервал', intervalId);
+        video.pause();
+        clearInterval(intervalId);
+    }
+}
+
+function toggleSoundValue() {
+
+    if (video.volume == 0) {
+        video.volume = soundLevel;
+        soundControl.value = soundLevel * MAX_SOUND_VALUE;
+    } else {
+        soundLevel = video.volume;
+        video.volume = 0;
+        soundControl.value = 0;
+    }
+};
+
+function setSoundVolume() {
+    video.volume = soundControl.value / MAX_SOUND_VALUE;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    durationControl.min = 0;
+    durationControl.value = 0;
+
+    soundControl.min = 0;
+    soundControl.max = MAX_SOUND_VALUE;
+    soundControl.value = MAX_SOUND_VALUE;
+
+
+    setEventListeners();
+});

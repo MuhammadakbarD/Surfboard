@@ -565,7 +565,7 @@
                             спеша, не прилагая особых усилий ехать по ним.</p>
                           <button class="close-btn" type="button">
                               <img src="./img/exit.svg" class="close-btn-icon"></img>
-                            </button>
+                          </button>
                         </div>
                     </li>
         
@@ -595,7 +595,7 @@
                             спеша, не прилагая особых усилий ехать по ним.</p>
                             <button class="close-btn" type="button">
                                 <img src="./img/exit.svg" class="close-btn-icon"></img>
-                              </button>
+                            </button>
                         </div>
                     </li>
                 </ul>
@@ -692,27 +692,29 @@
 
             <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
                 <div class="container player__container">
-                  <h2 class="section__title">Как мы работаем</h2>
-                  <div class="player-section__container">
-                    <div class="player">
-                      <div class="player__wrapper">
-                        <div id="yt-player" class="player__elem"></div>
-                        <div class="player__splash"> </div>
-                      </div>
-                      <div class="player__controls">
-                        <button class="player__start"></button>
-                        <div class="player__playback ">
-                          <button class="player__playback-button"></button>
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="video__container">
+                        <div class="video__player">
+                            <video id="player" poster="./img/player__img.png">
+                                <source src="./img/Heisenberg.mp4">
+                            </video>
+                            <img src="./img/playbtn.svg" alt="" class="play video__player-img">
                         </div>
-                        <div class="player__duration">
-                          <span class="player__duration-completed">0:00</span> :
-                          <span class="player__duration-estimate">0:00</span>
+                        <div class="video__toolbar">
+                            <div class="duration">
+                                <img src="./img/playbtn.svg" alt="" class="play duration__img">
+                                <input type="range" class="duration__length" id="durationLevel">
+                            </div>
+                            <div class="sound">
+                                <img src="./img/sound.svg" alt="" class="sound__mic" id="mic">
+                                <div class="sound__volume">
+                                    <input type="range" class="duration__length duration__length--other" id="micLevel">
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </section>
+            </section>
 
             <section data-sidemenu-theme="white" data-section-id="order" class="section order-section">
                 <div class="container">
