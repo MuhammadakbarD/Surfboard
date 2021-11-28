@@ -55,15 +55,6 @@
             closeItem(activePerson);
         }
     });*/
-
-    const closeButton = document.querySelector('.close-btn-icon');
-
-
-    closeButton.addEventListener('click', e => {
-        const activePerson = document.querySelector(".menu-acco__item.active");
-        
-        closeItem(activePerson);
-    })
 /* JQuery Variant
 const measureWidth = item => {
     let reqItemWidth = 0;
