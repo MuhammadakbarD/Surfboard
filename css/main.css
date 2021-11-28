@@ -137,7 +137,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero {
-    margin-bottom: 0.7777777778rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1054,6 +1053,97 @@ img {
   transition: 0.3s;
 }
 
+/* jQuery variant
+.products-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.products-menu__item {
+    display: flex;
+}
+
+.products-menu__title {
+    position: relative;
+    width: 100px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(41, 41, 41, 0.5);
+    }
+}
+
+.products-menu__text {
+    font-weight: bold;
+    font-size: rem(48px);
+    transform: rotate(-90deg);
+    text-decoration: none;
+    margin: rem(-100px) 0;
+    color: white;
+}
+
+.products-menu__img {
+    height: 100%;
+    width: rem(102px);
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    @include phones {
+        width: rem(90px);
+    }
+}
+
+.products-menu__content {
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    background: rgba(47, 50, 52, 0.9);
+    transition: width 0.7s;
+
+    @include phones {
+        transition: none;
+    }
+}
+
+.products-menu__container {
+    padding: 40px 73px 45px 26px;
+
+    @include phones {
+        padding: 40px 35px 45px 20px;
+    }
+}
+
+.products-menu__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+    display: contents;
+}
+
+.products-menu__close-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+    transition: .3s;
+}
+
+.products-menu__content-text {
+    font-size: rem(16px);
+    color: #fff;
+    padding: rem(65px) rem(34px);
+    width: 100%;
+    position: relative;
+}*/
 .reviews__display {
   background: #F8FAF9;
   padding: 2.3333333333rem;
@@ -1291,6 +1381,12 @@ img {
     max-width: rem(662px);
     width: 100%;
 }*/
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 1.6666666667rem;
+  }
+}
+
 .video__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1302,7 +1398,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
 }
 
 .video__player {
@@ -1331,9 +1426,15 @@ img {
 .video__player-img--hidden {
   opacity: 0;
 }
+@media screen and (max-width: 480px) {
+  .video__player-img {
+    width: 45px;
+    height: 65px;
+  }
+}
 
 .video__toolbar {
-  height: 35px;
+  height: 1.9444444444rem;
   background-color: #3e3e3e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1353,14 +1454,21 @@ img {
 }
 
 .duration__img {
-  padding: 5px 20px;
+  padding: 0.2777777778rem 1.1111111111rem;
+  cursor: pointer;
+  height: 70%;
+}
+
+.pause__img {
+  display: none;
+  padding: 0.2777777778rem 1.1111111111rem;
   cursor: pointer;
   height: 70%;
 }
 
 .duration__length {
   width: 100%;
-  height: 4px;
+  height: 0.2222222222rem;
   border-radius: 1px;
   background-color: #FEDB3F;
   -webkit-appearance: none;
@@ -1370,8 +1478,8 @@ img {
 }
 
 .duration__length--other {
-  width: 58px;
-  height: 4px;
+  width: 3.2222222222rem;
+  height: 0.2222222222rem;
 }
 
 .duration__length::-webkit-slider-thumb {
@@ -1379,18 +1487,18 @@ img {
   appearance: none;
   background: #FEDB3F;
   cursor: pointer;
-  width: 13px;
-  height: 13px;
+  width: 0.7222222222rem;
+  height: 0.7222222222rem;
   border-radius: 50%;
 }
 
 .duration__length::-ms-track {
   width: 100%;
-  height: 8.4px;
+  height: 0.4666666667rem;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
-  border-width: 16px 0;
+  border-width: 0.8888888889rem 0;
   color: transparent;
 }
 
@@ -1401,7 +1509,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 25px;
+  margin: 0 1.3888888889rem;
 }
 
 .sound__mic {
@@ -1409,8 +1517,8 @@ img {
 }
 
 .sound__volume {
-  margin-left: 10px;
-  margin-top: -5px;
+  margin-left: 0.5555555556rem;
+  margin-top: -0.2777777778rem;
 }
 
 .reviews-switcher__item {

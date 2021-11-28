@@ -13,7 +13,6 @@
     }
 
     @include phones {
-        margin-bottom: rem(14px);
         object-fit: cover;
     }
 }

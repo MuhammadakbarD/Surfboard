@@ -112,6 +112,9 @@ const soundControl = document.getElementById('micLevel');
 const playButtons = document.querySelectorAll('.play');
 const playButtonVideo = document.querySelector('.video__player-img');
 const micButton = document.getElementById('mic');
+const volumeButton = document.querySelector('.sound__mic');
+const pauseButton = document.querySelector('.pause__img');
+const playButton = document.querySelector('.duration__img');
 
 const MAX_SOUND_VALUE = 100;
 let intervalId;
@@ -147,9 +150,13 @@ function playStop() {
         intervalId = setInterval(upateDuration, NORMAL_UPDATE_RANGE);
         upateDuration();
         video.play();
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'block';
     } else {
         stopInterval();
         video.pause();
+        pauseButton.style.display = 'none';
+        playButton.style.display = 'block';
     }
 };
 
@@ -182,15 +189,18 @@ function toggleSoundValue() {
     if (video.volume == 0) {
         video.volume = soundLevel;
         soundControl.value = soundLevel * MAX_SOUND_VALUE;
+        volumeButton.style.fill = 'white';
     } else {
         soundLevel = video.volume;
         video.volume = 0;
         soundControl.value = 0;
+        volumeButton.style.fill = 'red';
     }
 };
 
 function setSoundVolume() {
     video.volume = soundControl.value / MAX_SOUND_VALUE;
+    volumeButton.style.fill = 'white';
 }
 
 document.addEventListener('DOMContentLoaded', function() {

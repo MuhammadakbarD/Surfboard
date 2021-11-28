@@ -113,6 +113,11 @@
     .tw-icon:hover {
         fill: #292929;
     }
+    .sound__mic {
+        width: 12px;
+        height: 16px;
+        fill: #fff;
+    }
 </style>
 
 <body>
@@ -563,9 +568,6 @@
                             грести, разгребаться на волны и ехать. Размер и плавучесть 
                             доски позволяет брать очень маленькие и пологие волны и не
                             спеша, не прилагая особых усилий ехать по ним.</p>
-                          <button class="close-btn" type="button">
-                              <img src="./img/exit.svg" class="close-btn-icon"></img>
-                          </button>
                         </div>
                     </li>
         
@@ -578,9 +580,6 @@
                             грести, разгребаться на волны и ехать. Размер и плавучесть 
                             доски позволяет брать очень маленькие и пологие волны и не
                             спеша, не прилагая особых усилий ехать по ним.</p>
-                            <button class="close-btn" type="button">
-                                <img src="./img/exit.svg" class="close-btn-icon"></img>
-                            </button>
                         </div>
                     </li>
         
@@ -593,16 +592,63 @@
                             грести, разгребаться на волны и ехать. Размер и плавучесть 
                             доски позволяет брать очень маленькие и пологие волны и не
                             спеша, не прилагая особых усилий ехать по ним.</p>
-                            <button class="close-btn" type="button">
-                                <img src="./img/exit.svg" class="close-btn-icon"></img>
-                            </button>
                         </div>
                     </li>
                 </ul>
+                <!-- JQuery variant <ul class="products-menu">
+                    <li class="products-menu__item">
+                        <a class="products-menu__title">
+                            <img src="./img/longboard.jpeg" alt="surfer" class="products-menu__img">
+                            <div class="products-menu__text">Лонгборды</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <button class="products-menu__close" type="button">
+                                    <img src="./img/exit.svg" alt="" class="products-menu__close-icon">
+                                </button>
+                                <div class="products-menu__content-text">
+                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a class="products-menu__title">
+                            <img src="./img/shortboard.jpeg" alt="surfer" class="products-menu__img">
+                            <div class="products-menu__text">Шортборды</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <button class="products-menu__close" type="button">
+                                    <img src="./img/exit.svg" alt="" class="products-menu__close-icon">
+                                </button>
+                                <div class="products-menu__content-text">
+                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a class="products-menu__title">
+                            <img src="./img/softtopi.jpeg" alt="surfer" class="products-menu__img">
+                            <div class="products-menu__text">Софттопы</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <button class="products-menu__close" type="button">
+                                    <img src="./img/exit.svg" alt="" class="products-menu__close-icon">
+                                </button>
+                                <div class="products-menu__content-text">
+                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>-->
                 
             </section>
 
-            <section data-sidemenu-theme="black" data-section-id="reviews" class="section">
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title title__reviews">Отзывы</h2>
                     <div class="reviews">
@@ -702,11 +748,14 @@
                         </div>
                         <div class="video__toolbar">
                             <div class="duration">
+                                <img src="./img/pause.svg" alt="" class="play pause__img">
                                 <img src="./img/playbtn.svg" alt="" class="play duration__img">
                                 <input type="range" class="duration__length" id="durationLevel">
                             </div>
                             <div class="sound">
-                                <img src="./img/sound.svg" alt="" class="sound__mic" id="mic">
+                                <svg class="sound__mic" id="mic">
+                                    <use xlink:href="./sprite.svg#volume"></use>
+                                </svg>
                                 <div class="sound__volume">
                                     <input type="range" class="duration__length duration__length--other" id="micLevel">
                                 </div>
