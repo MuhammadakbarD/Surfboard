@@ -35,8 +35,4 @@
     display: flex;
     justify-content: center;
     margin-right: rem(6px);
-
-    @include tablets {
-        margin-bottom: rem(180px);
-    }
 }

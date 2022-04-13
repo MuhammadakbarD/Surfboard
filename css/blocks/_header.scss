@@ -43,6 +43,10 @@
     &:last-child {
         margin-right: 0;
     }
+
+    :hover {
+        text-decoration: underline;
+    }
 }
 
 .menu__link {

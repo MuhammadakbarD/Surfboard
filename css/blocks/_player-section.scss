@@ -119,12 +119,6 @@
     width: 100%;
 }*/
 
-.section__title {
-    @include phones {
-        font-size: rem(30px);
-    }
-}
-
 .video__container {
     display: flex;
     justify-content: center;

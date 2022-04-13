@@ -121,19 +121,21 @@ $("[data-scroll-to]").click( e => {
     performTransition(reqSection.index());
 });
 
-if (isMobile) {
-    // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-    $(function () {
-        $("body").swipe({
-            swipe: function (event, direction) {
-                const scroller = viewportScroller();
-                let scrollDirection = "";
+// https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-                if (direction === "up") scrollDirection = "next";
-                if (direction === "down") scrollDirection = "prev";
-
-                scroller[scrollDirection]();
-            },
-        });
-    });
+if(isMobile) {
+    $("body").swipe( {
+        swipe: function
+        (event, 
+        direction) {
+          const scroller = viewportScroller();
+          let scrolDirection = "";
+          
+          if (direction == "up") scrolDirection = "next";
+          if (direction == "down") scrolDirection = "prev";
+    
+          scroller[scrolDirection]();
+    
+        }
+      });
 }

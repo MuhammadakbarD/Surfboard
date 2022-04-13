@@ -11,3 +11,8 @@ fullScreenMenuClose.addEventListener('click', e => {
     fullScreenMenu.style.display = 'none';
     e.preventDefault();
 })
+
+fullScreenMenu.addEventListener('click', e => {
+    fullScreenMenu.style.display = 'none';
+    e.preventDefault();
+})

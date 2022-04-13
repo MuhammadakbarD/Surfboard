@@ -62,6 +62,10 @@
     $(".app-submit-btn").click(e => {
         e.preventDefault();
 
+        let jorm = $('.app-submit-btn').closest('.form__input')
+
+        console.log(jorm);
+
         $.fancybox.close();
     });
 }());

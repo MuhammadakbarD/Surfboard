@@ -1,5 +1,13 @@
 .product-section {
     background: #F8FAF9;
+
+    @include tablets {
+        padding-top: rem(68px);
+    }
+
+    @include phones {
+        padding-top: rem(34px);
+    }
 }
 
 .product__container {
@@ -9,6 +17,10 @@
 
     @include tablets {
         flex-direction: column;
+    }
+
+    @include phones {
+        overflow: hidden;
     }
 }
 
@@ -35,7 +47,7 @@
     &--direction--prev {
         left: 0;
         transform: rotate(-180deg);
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
 
     &--direction--next {
@@ -49,12 +61,27 @@
     margin-right: rem(80px);
     object-fit: cover;
     width: rem(480px);
+
+    @include tablets {
+        width: 35%;
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: 0;
+        width: 50%;
+    }
 }
 
-.product__col {
+.product__col-right {
     width: 50%;
+    
+    @include tablets {
+        width: 80%;
+    }
 
 }
+
 
 .product__ingredients-back {
     background: #3A587E;
@@ -131,6 +158,11 @@
 
 .product__text {
     margin-bottom: rem(24px);
+    text-align: left;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .product__descs {
@@ -140,7 +172,11 @@
     margin-bottom: rem(46px);
 
     @include tablets {
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    @include phones {
+        margin-right: rem(5px);
     }
 }
 
@@ -167,4 +203,8 @@
     color: #151515;
     white-space: nowrap;
     margin-right: rem(5px);
+
+    @include phones {
+        margin-right: rem(10px);
+    }
 }
