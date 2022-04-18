@@ -151,8 +151,8 @@
     }
 
     @include phones {
-        width: 45px;
-        height: 65px;
+        width: rem(45px);
+        height: rem(65px);
     }
 }
 

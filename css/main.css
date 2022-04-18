@@ -351,8 +351,8 @@ img {
 }
 
 .hamburger {
-  width: 26px;
-  height: 24px;
+  width: 1.4444444444rem;
+  height: 1.3333333333rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -373,8 +373,8 @@ img {
 .hamburger__plank {
   display: block;
   background: #FFFFFF;
-  height: 4px;
-  border-radius: 10px;
+  height: 0.2222222222rem;
+  border-radius: 0.5555555556rem;
 }
 
 .features {
@@ -1299,7 +1299,7 @@ img {
 
 .reviews__list {
   position: relative;
-  min-height: 348px;
+  min-height: 19.3333333333rem;
 }
 
 .reviews__item {
@@ -1489,8 +1489,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .video__player-img {
-    width: 45px;
-    height: 65px;
+    width: 2.5rem;
+    height: 3.6111111111rem;
   }
 }
 
