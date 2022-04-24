@@ -5,6 +5,10 @@
     @include phones {
         font-size: rem(35px);
     }
+
+    @include iphone5 {
+        padding-top: rem(15px);
+    }
 }
 
 .headline__subtitle {

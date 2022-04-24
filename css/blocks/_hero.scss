@@ -65,6 +65,10 @@
         font-size: rem(40px);
     }
 
+    @include iphone5 {
+        font-size: rem(34px);
+    }
+
 }
 
 .hero__title-desc {

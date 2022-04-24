@@ -65,6 +65,10 @@
     @include phones {
         width: rem(90px);
     }
+
+    @include iphone5 {
+        width: rem(72px);
+    }
 }
 
 .menu-acco__trigger-title {

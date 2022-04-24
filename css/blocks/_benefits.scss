@@ -5,6 +5,10 @@
         flex-direction: column;
         margin-bottom: rem(54px);
     }
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .benefits__item {

@@ -7,6 +7,10 @@
         margin-bottom: rem(32px);
         padding: rem(56px) rem(24px) rem(46px);
     }
+
+    @include tablets {
+        padding: rem(18px) rem(18px) rem(18px);
+    }
 }
 
 .reviews__display-inner {
@@ -32,6 +36,10 @@
 
 .title__reviews {
     margin-top: rem(50px);
+
+    @include iphone5 {
+        margin-top: 0;
+    }
 }
 
 .reviews__avatar-img {

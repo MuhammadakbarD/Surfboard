@@ -8,6 +8,10 @@
     @include phones {
         padding-top: rem(34px);
     }
+    
+    @include iphone5 {
+        padding-top: rem(54px);
+    }
 }
 
 .product__container {
